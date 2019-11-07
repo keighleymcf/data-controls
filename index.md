@@ -67,7 +67,7 @@
         <footer class="section">
           <div class="footer-contact">
             <p>Data Controls</p>
-            <p>858.451.0630</p>
+            <a href="tel:8584510630"><p>858.451.0630</p></a>
             <a href="mailto:graphics@datacontrols.net">
               <p>graphics@datacontrols.net</p></a
             >

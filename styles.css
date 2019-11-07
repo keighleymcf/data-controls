@@ -32,19 +32,19 @@ body {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
-  height: 180vh;
+  height: 200vh;
 }
 
 .container {
   background-color: rgba(0, 0, 0, 0.95);
-  margin: 100px 50px;
-  padding: 50px 100px;
+  padding: 0 100px;
   display: flex;
+  height: 100vh;
 }
 
 #top-logo {
   width: 300px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .top {
@@ -53,7 +53,7 @@ body {
   align-items: center;
   font-size: 1.8rem;
   text-align: center;
-  padding: 70px 100px;
+  border-top: 8px solid rgb(164, 164, 96);
 }
 
 h1 {
@@ -64,6 +64,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 100px 50px;
 }
 
 .description {
@@ -77,6 +78,7 @@ h2 {
   font-size: 3.5rem;
   color: rgb(164, 164, 96);
   font-weight: normal;
+  padding-bottom: 40px;
 }
 
 .description p {
