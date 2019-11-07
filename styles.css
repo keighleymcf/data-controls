@@ -1,49 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
+body {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+}
 
 .wrapper {
+  perspective: 1px;
   height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
-  /* Enable scrolling on the page. */
   overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
-  width: 100vw;
 }
-
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-
-  /* For text formatting. */
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white; */
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-
-.parallax {
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
+.parallax-layer .base {
+  transform: translateZ(0);
 }
 
 .background {
-  background-image: url("./pierre-bamin-X16N5J0uRD4-unsplash.jpg");
+  transform: translateZ(-2px) scale(3);
+  background-image: url("./public/pierre-bamin-X16N5J0uRD4-unsplash.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
-  height: 100vh;
+  height: 150vh;
 }
 
 .container {
-  background-color: slategray;
-  height: 300px;
-  margin: 50px;
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 400px;
+  margin: 100px 50px;
+  padding: 50px 100px;
+  display: flex;
+}
+
+#top-logo {
+  width: 300px;
+  padding-bottom: 40px;
+}
+
+.top {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.middle {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 100px;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+.description p {
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+
+.contact-info-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-info p {
+  font-size: 1.7rem;
+  padding: 10px 0;
+}
+
+.fas {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(143, 97, 128);
+}
+
+footer {
+  height: 75px;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
 }
