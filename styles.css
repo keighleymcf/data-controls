@@ -3,10 +3,12 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 10px;
+}
 body {
   color: white;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 18px;
 }
 
 .wrapper {
@@ -32,14 +34,12 @@ body {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
-  height: 200vh;
+  height: 180vh;
 }
 
 .container {
   background-color: rgba(0, 0, 0, 0.95);
-  padding: 0 100px;
   display: flex;
-  height: 100vh;
 }
 
 #top-logo {
@@ -54,6 +54,8 @@ body {
   font-size: 1.8rem;
   text-align: center;
   border-top: 8px solid rgb(164, 164, 96);
+  height: 100vh;
+  padding: 0 100px;
 }
 
 h1 {
@@ -61,29 +63,29 @@ h1 {
 }
 
 .middle {
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  margin: 100px 50px;
+  margin: 80px 20px;
+  padding: 10%;
+  border-radius: 8px;
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding-right: 100px;
 }
 
 h2 {
   font-size: 3.5rem;
   color: rgb(164, 164, 96);
   font-weight: normal;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .description p {
   padding: 20px 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .contact-info-line {
@@ -128,4 +130,22 @@ footer {
 
 .footer-contact p {
   padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .middle {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 50px;
+  }
+  .description {
+    width: 50%;
+  }
+  .description p {
+    font-size: 1.2rem;
+  }
 }
