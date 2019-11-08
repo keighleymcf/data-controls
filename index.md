@@ -67,17 +67,23 @@
         <footer class="section">
           <div class="footer-contact">
             <p>Data Controls</p>
-            <a href="tel:8584510630"><p>858.451.0630</p></a>
-            <a href="mailto:graphics@datacontrols.net">
-              <p>graphics@datacontrols.net</p></a
-            >
+            <div>
+              <a href="tel:8584510630"><p>858.451.0630</p></a>
+              <a href="mailto:graphics@datacontrols.net">
+                <p>graphics@datacontrols.net</p></a
+              >
+            </div>
           </div>
-          <p>
-            Website by
-            <a href="https://www.linkedin.com/in/keighleymcfarland/"
-              >Keighley McFarland</a
-            >
-          </p>
+          <div class="author">
+            <p>
+              Website by
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/keighleymcfarland/"></a>
+                Keighley McFarland</a
+              >
+            </p>
+          </div>
         </footer>
       </div>
     </div>
