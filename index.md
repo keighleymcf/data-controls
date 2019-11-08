@@ -79,8 +79,8 @@
               Website by
             </p>
             <p>
-              <a href="https://www.linkedin.com/in/keighleymcfarland/"></a>
-                Keighley McFarland</a
+              <a href="https://www.linkedin.com/in/keighleymcfarland/">
+              Keighley McFarland</a
               >
             </p>
           </div>
