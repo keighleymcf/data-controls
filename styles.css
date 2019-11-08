@@ -149,6 +149,9 @@ footer {
   .description p {
     font-size: 1.2rem;
   }
+  footer {
+    padding: 10px 20px;
+  }
   .footer-contact p {
     padding-right: 10px;
   }
