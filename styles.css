@@ -12,6 +12,7 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
   background-image: url("./public/pierre-bamin-X16N5J0uRD4-unsplash.jpg");
+  border-top: 8px solid rgb(143, 97, 128);
 }
 
 .container {
@@ -22,7 +23,7 @@ body {
 h1 {
   font-size: 4rem;
   color: rgb(164, 164, 96);
-  padding-bottom: 20px;
+  padding-bottom: calc(5% - 10px);
 }
 
 .middle {
@@ -85,13 +86,15 @@ footer {
 }
 
 footer a {
-  color: #c6aebe;
+  color: rgb(198, 174, 190);
 }
 
 .footer-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
 }
 
 .footer-contact {
@@ -121,7 +124,7 @@ footer a {
 
 @media (min-width: 769px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
   .middle {
     flex-direction: column;
