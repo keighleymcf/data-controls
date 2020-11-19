@@ -7,12 +7,14 @@
 html {
   font-size: 10px;
 }
+
 body {
   margin: 0;
   color: white;
   font-family: "Montserrat", sans-serif;
   background-image: url("./public/pierre-bamin-X16N5J0uRD4-unsplash.jpg");
   border-top: 8px solid rgb(143, 97, 128);
+  min-height: 100vh;
 }
 
 .container {
@@ -21,23 +23,24 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.4rem;
   color: rgb(164, 164, 96);
-  padding-bottom: calc(5% - 10px);
+  padding-bottom: 5%;
+  text-align: center;
 }
 
-.middle {
-  justify-content: space-around;
+.main {
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 80px 20px;
+  margin: 20px;
   padding: 10%;
   border-radius: 8px;
 }
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
@@ -52,6 +55,10 @@ h1 {
   font-family: "Lato", sans-serif;
 }
 
+.description p:first-child {
+  text-align: center;
+}
+
 .contact-info-line {
   display: flex;
   flex-direction: row;
@@ -60,7 +67,7 @@ h1 {
 }
 
 .contact-info p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 10px 0;
 }
 
@@ -78,11 +85,10 @@ a {
 footer {
   height: 75px;
   background-color: rgba(0, 0, 0, 0.95);
-  position: absolute;
-  bottom: 0;
   padding: 10px 20px;
   font-size: 1rem;
   min-width: 100vw;
+  margin-top: 20px;
 }
 
 footer a {
@@ -122,25 +128,15 @@ footer a {
   padding-right: 10px;
 }
 
-@media (min-width: 769px) {
-  html {
-    font-size: 16px;
-  }
-  .middle {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+@media (min-width: 500px) {
+  .main {
     margin: 100px 50px;
-    padding: 5%;
   }
-  .description {
-    width: 40%;
-  }
-  .description p {
-    font-size: 1.2rem;
-  }
+
   footer {
     padding: 10px 100px;
+    position: absolute;
+    bottom: 0;
   }
   .footer-contact {
     flex-direction: row;
@@ -155,5 +151,33 @@ footer a {
   }
   .footer-contact p {
     padding-right: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+  }
+  h1 {
+    font-size: 4rem;
+    padding-bottom: calc(5% - 10px);
+  }
+  .content {
+    flex-direction: row;
+  }
+  .description {
+    width: 40%;
+  }
+  .description p {
+    font-size: 1.2rem;
+  }
+  .description p:first-child {
+    text-align: left;
   }
 }
