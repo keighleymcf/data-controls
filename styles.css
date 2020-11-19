@@ -36,6 +36,7 @@ h1 {
   margin: 20px;
   padding: 10%;
   border-radius: 8px;
+  max-width: 1440px;
 }
 
 .content {
@@ -179,5 +180,11 @@ footer a {
   }
   .description p:first-child {
     text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main {
+    margin: 100px auto;
   }
 }
