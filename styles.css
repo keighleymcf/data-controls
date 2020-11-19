@@ -1,40 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 10px;
 }
 body {
+  margin: 0;
   color: white;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.wrapper {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax-layer .base {
-  transform: translateZ(0);
-}
-
-.background {
-  transform: translateZ(-2px) scale(3);
+  font-family: "Montserrat", sans-serif;
   background-image: url("./public/pierre-bamin-X16N5J0uRD4-unsplash.jpg");
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-size: cover;
-  height: 180vh;
 }
 
 .container {
@@ -42,34 +19,25 @@ body {
   display: flex;
 }
 
-#top-logo {
-  width: 300px;
-  height: auto;
-  padding-bottom: 60px;
-}
-
-.top {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  text-align: center;
-  border-top: 8px solid rgb(143, 97, 128);
-  height: 100vh;
-  padding: 2% 5%;
-}
-
 h1 {
-  font-weight: normal;
+  font-size: 4rem;
+  color: rgb(164, 164, 96);
+  padding-bottom: 20px;
 }
 
 .middle {
-  flex-direction: column;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   margin: 80px 20px;
   padding: 10%;
   border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .description {
@@ -77,16 +45,10 @@ h1 {
   flex-direction: column;
 }
 
-h2 {
-  font-size: 4rem;
-  color: rgb(164, 164, 96);
-  font-weight: normal;
-  padding-bottom: 20px;
-}
-
 .description p {
   padding: 20px 0;
   font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
 }
 
 .contact-info-line {
@@ -115,11 +77,21 @@ a {
 footer {
   height: 75px;
   background-color: rgba(0, 0, 0, 0.95);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  bottom: 0;
   padding: 10px 20px;
   font-size: 1rem;
+  min-width: 100vw;
+}
+
+footer a {
+  color: #c6aebe;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-contact {
@@ -152,7 +124,7 @@ footer {
     font-size: 14px;
   }
   .middle {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: 100px 50px;
