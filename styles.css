@@ -23,10 +23,16 @@ body {
 }
 
 h1 {
-  font-size: 3.4rem;
+  display: none;
+  /* font-size: 3.4rem;
   color: rgb(164, 164, 96);
   padding-bottom: 5%;
-  text-align: center;
+  text-align: center; */
+}
+
+#logo {
+  padding-bottom: 5%;
+  max-width: 280px;
 }
 
 .main {
@@ -68,13 +74,13 @@ h1 {
 }
 
 .contact-info p {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   padding: 10px 0;
 }
 
 .fas {
   font-size: 3rem;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   color: white;
 }
 
@@ -165,10 +171,16 @@ footer a {
     align-items: center;
     padding: 5%;
   }
-  h1 {
+
+  #logo {
+    padding-bottom: calc(5% - 10px);
+    max-width: 360px;
+  }
+
+  /* h1 {
     font-size: 4rem;
     padding-bottom: calc(5% - 10px);
-  }
+  } */
   .content {
     flex-direction: row;
   }
@@ -180,6 +192,15 @@ footer a {
   }
   .description p:first-child {
     text-align: left;
+  }
+  .contact-info p {
+    font-size: 1.5rem;
+  }
+
+  .fas {
+    font-size: 3rem;
+    padding: 20px;
+    color: white;
   }
 }
 
