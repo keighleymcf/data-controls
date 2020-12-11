@@ -12,7 +12,8 @@ body {
   margin: 0;
   color: white;
   font-family: "Montserrat", sans-serif;
-  background-image: url("./public/pierre-bamin-X16N5J0uRD4-unsplash.jpg");
+  background-image: url("./public/bank-phrom-Tzm3Oyu_6sk-unsplash-bw.jpg");
+  background-size: cover;
   border-top: 8px solid rgb(143, 97, 128);
   min-height: 100vh;
 }
@@ -41,7 +42,7 @@ h1 {
   align-items: center;
   margin: 20px;
   padding: 10%;
-  border-radius: 8px;
+  border-radius: 24px;
   max-width: 1440px;
 }
 
@@ -95,6 +96,8 @@ footer {
   font-size: 1rem;
   min-width: 100vw;
   margin-top: 20px;
+  position: relative;
+  bottom: 0;
 }
 
 footer a {
@@ -164,6 +167,7 @@ footer a {
   html {
     font-size: 16px;
   }
+
   .main {
     flex-direction: column;
     justify-content: space-around;
