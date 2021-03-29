@@ -166,14 +166,9 @@ footer {
 
 @media (min-width: 500px) {
   .main {
-    margin: 100px 50px;
+    margin: 50px;
   }
 
-  footer {
-    padding: 10px 100px;
-    position: absolute;
-    bottom: 0;
-  }
   .footer-contact {
     flex-direction: row;
     justify-content: flex-start;
