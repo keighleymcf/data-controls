@@ -4,44 +4,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 10px;
 }
 
 body {
   margin: 0;
-  color: white;
+  color: black;
   font-family: "Montserrat", sans-serif;
-  background-image: url("./public/bank-phrom-Tzm3Oyu_6sk-unsplash-bw.jpg");
-  background-size: cover;
-  border-top: 8px solid rgb(143, 97, 128);
+  background-color: #ffffff;
+  border-top: 8px solid #909044;
   min-height: 100vh;
 }
 
-.container {
-  background-color: rgba(0, 0, 0, 0.95);
-  display: flex;
+a {
+  text-decoration: none;
+  color:#8B587D
 }
 
-h1 {
+.nav {
   display: none;
-  /* font-size: 3.4rem;
-  color: rgb(164, 164, 96);
-  padding-bottom: 5%;
-  text-align: center; */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0 16px;
+}
+
+.nav .fas {
+  color:#8B587D;
+  font-size: 1.5rem;
 }
 
 #logo {
-  padding-bottom: 5%;
-  max-width: 250px;
+  width: 100%;
+  margin: 24px 0;
 }
 
 .main {
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  padding: 10%;
   border-radius: 24px;
   max-width: 1440px;
 }
@@ -52,6 +57,29 @@ h1 {
   justify-content: space-evenly;
 }
 
+.divider-line {
+  height: 8px;
+  width: 160px;
+  align-self: flex-end;
+  background-color: #dec978;
+  margin: 16px 0px 48px 0;
+}
+
+.intro p {
+  padding: 20px 0;
+  font-size: 1.8rem;
+}
+
+#illustration-top {
+  width: calc(100% - 32px);
+  margin: 16px;
+}
+
+#illustration-bottom {
+  width: 100%;
+  margin-top: 24px;
+ }
+
 .description {
   display: flex;
   flex-direction: column;
@@ -59,11 +87,15 @@ h1 {
 
 .description p {
   padding: 20px 0;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
 }
 
-.description p:first-child {
-  text-align: center;
+.description span {
+  font-weight: bold;
+}
+
+.contact-info {
+  align-self: center;
 }
 
 .contact-info-line {
@@ -79,29 +111,24 @@ h1 {
 }
 
 .fas {
-  font-size: 3rem;
+  font-size: 2.8rem;
   padding: 20px 20px 20px 0;
-  color: white;
+  color:  #909044;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(222, 201, 120);
+.contact-info a {
+  font-weight: bold;
+  color:  #909044;
 }
 
 footer {
   height: 75px;
-  background-color: rgba(0, 0, 0, 0.95);
   padding: 10px 20px;
   font-size: 1rem;
   min-width: 100vw;
   margin-top: 20px;
   position: relative;
   bottom: 0;
-}
-
-footer a {
-  color: rgb(198, 174, 190);
 }
 
 .footer-content {
@@ -168,6 +195,10 @@ footer a {
     font-size: 16px;
   }
 
+  .nav {
+    display: flex;
+  }
+
   .main {
     flex-direction: column;
     justify-content: space-around;
@@ -177,8 +208,7 @@ footer a {
   }
 
   #logo {
-    padding-bottom: calc(5% - 10px);
-    max-width: 360px;
+    width: 200px;
   }
 
   /* h1 {
