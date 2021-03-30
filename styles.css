@@ -180,6 +180,8 @@ footer {
 
   .main {
     flex-direction: column;
+    width: 100%;
+    padding: 32px;
   }
 
   .intro {
@@ -194,13 +196,15 @@ footer {
   }
 
   #logo {
-    width: 900px;
+    width: 90%;
+    max-width: 800px;
     margin: 0 48px 64px 0;
   }
 
-  .intro p {
-  max-width: 800px;;
-} 
+  #illustration-top {
+    width: calc(45% - 32px);
+  }
+
   .divider-line {
     align-self: center;
     margin: 64px 0;
@@ -212,9 +216,17 @@ footer {
   align-items: center;
 }
 
+#illustration-bottom {
+  width: calc(60% - 32px);
+}
 
+  #description-contact {
+    width: 45%;
+  max-width: 800px;
+} 
   .description p, .contact-info p {
     font-size: 1.8rem;
+    padding: 0 16px;
   }
 
   .fas {
