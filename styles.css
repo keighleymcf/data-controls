@@ -152,11 +152,10 @@ footer {
   .main {
     margin: 50px;
   }
-
   .divider-line {
     width: 280px;
   }
-
+/* footer transitions to wide view */
   .footer-contact {
     flex-direction: row;
     justify-content: flex-start;
@@ -166,7 +165,7 @@ footer {
     flex-direction: row;
   }
   .author p:nth-child(1) {
-    padding-right: 10px;
+    padding-right: 4px;
   }
   .footer-contact p {
     padding-right: 20px;
@@ -210,20 +209,21 @@ footer {
     margin: 64px 0;
   }
 
-#content {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
+  #content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 
-#illustration-bottom {
-  width: calc(60% - 32px);
-}
+  #illustration-bottom {
+    width: calc(60% - 32px);
+  }
 
-  #description-contact {
+  #description-text {
     width: 45%;
-  max-width: 800px;
-} 
+    max-width: 800px;
+  } 
+
   .description p, .contact-info p {
     font-size: 1.8rem;
     padding: 0 16px;
