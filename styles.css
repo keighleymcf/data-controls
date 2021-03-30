@@ -23,6 +23,12 @@ a {
   color:#8B587D
 }
 
+#seo-keywords {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
 #logo {
   width: 100%;
   margin: 24px 0;
