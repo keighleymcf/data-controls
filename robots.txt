@@ -1,0 +1,7 @@
+# robots.txt for datacontrols.net
+
+User-agent: *
+Allow: /
+
+# Prevent indexing of unlinked/unused assets
+Disallow: /public/unused-assets/
